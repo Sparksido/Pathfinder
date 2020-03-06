@@ -14,7 +14,14 @@ nodesMatrix = [[0,  3,  1000,  1000,  1000,  5],
 
 iteration = 1
 visited = [1]
-unvisited = [4]
+unvisitedSize = len(nodesMatrix)
+unvisited = []
+counter = 1
 
-print(nodesMatrix[1][2])
+while counter < unvisitedSize:
+    unvisited.append(counter + 1)
+    counter = counter + 1
+
+
+print(unvisited)
 
